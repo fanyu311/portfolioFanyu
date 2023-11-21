@@ -1,0 +1,31 @@
+<header>
+	<nav class="navbar">
+
+		<a href="{{ path('app.homepage')}}" class="navbar-left">
+			<img class="icon" src="{{asset('build/images/star.png')}}" alt="star" loading:"lazy">
+		</a>
+		<div class="navbar-right">
+			<ul>
+
+				<li>
+					<a href="{{path('app.projets.index')}}">
+						<i class="bi bi-file-earmark-medical">Projets</i>
+					</a>
+				</li>
+
+				<li>
+					<a href="{{ path('app.about')}}">
+						<i class="bi bi-balloon-heart">About</i>
+					</a>
+				</li>
+				<li>
+					<a href="{{ path('app.contact')}}">
+						<i class="bi bi-postcard-heart">
+							Contact</i>
+					</li>
+				</li>
+			</i>
+		</a>
+	</li>
+</ul></div>{% if is_granted('ROLE_ADMIN') %}
+<a href="{{ path('app.logout')}}" class="deconnecter">Se deconnecter</a>{% endif %}</nav></header>

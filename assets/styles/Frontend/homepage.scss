@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 1em;
+    margin-left: 4em;
+    position: relative;
+    z-index: 1;
+ 
+   
+
+    .text {
+      width: 40%;
+      margin-top: 6em;
+      transform: translateX(-100%);
+      animation: slideInText 2s ease-in-out forwards; 
+    
+        h2 {
+            font-size: 4em;
+            line-height: 1;
+            text-align: right;
+            background-image: linear-gradient(45deg, red, yellow, blue, white);
+            color: transparent;
+            -webkit-background-clip: text;
+            animation: color 3s infinite;
+            background-size: 300%;
+        }
+        @keyframes color {
+            30% {
+                background-position: 25% 75%;
+            }
+            50% {
+                background-position: 50% 50%;
+            }
+            100% {
+                background-position: 20% 30%;
+            }
+        }
+        p{
+            margin-top: 1em;
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+            font-size: 1.5em;
+            line-height: 1;
+            font-family: 'ubuntu', sans-serif;
+        }
+       
+    }
+    .photo {
+        margin-top: 2em;
+        transform: translateX(100%);
+        animation: slideInImage 2s ease-in-out forwards;
+        img{
+           padding-left: 14em;
+           transform: rotate(8deg);
+           padding-left: 6em;
+           width: 290px;
+           height: 420px;
+        
+           
+        }
+       
+       
+      
+    }
+   
+
+    @keyframes slideInText {
+        to {
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideInImage {
+        to {
+          transform: translateX(0);
+        }
+      }
+  
+ 
+}
+

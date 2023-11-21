@@ -1,0 +1,76 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    position: relative;
+    z-index: 1;
+    
+ 
+
+   a{
+    text-decoration: none;
+    font-size: 1.5em;   
+
+      
+
+      
+      
+      &:hover{
+        color: black;
+        filter: blur(2px);
+        animation: animate 2.5s linear infinite;
+        font-size: 1.5em;
+      }
+      @keyframes animate {
+        0%, 100% {
+            color: #fff;
+            filter: blur(2px);
+            text-shadow: 0 0 10px #1e90ff
+        }
+        5%,95% {
+            color: #111;
+            filter: blur(0px);
+        }
+      }
+   
+   }
+
+   
+   &-middle {
+    margin-top: 2em;
+   }
+
+   &-right {
+    margin-top: 2em;
+    margin-left: -5em;
+    ul {
+        display: flex;
+         flex-direction: row;
+
+        li{
+            list-style: none;
+            margin-right: 40px;
+        }
+    }
+    
+   }
+   .icon{
+    animation: rotateGlow 5s linear infinite;
+
+   
+}
+@keyframes rotateGlow {
+    0% {
+      transform: rotate(0deg);
+    //   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+      transform: rotate(360deg);
+    //   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+    }
+  }
+ 
+
+  
+}
+

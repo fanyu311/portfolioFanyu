@@ -1,0 +1,26 @@
+// Import variable
+@import "./_variables.scss";
+
+
+// Import structure
+@import "./_structure.scss";
+
+// Import header
+@import "./Frontend/header.scss";
+
+// Import homepage
+@import "./Frontend/homepage.scss";
+
+// Import login
+@import "./Frontend/login.scss";
+
+// Import projet
+@import "./Frontend/projetFront.scss";
+
+// Import about
+@import "./Frontend/about.scss";
+
+// Import contact
+@import "./Frontend/contact.scss";
+
+@import '~bootstrap-icons/font/bootstrap-icons.scss';

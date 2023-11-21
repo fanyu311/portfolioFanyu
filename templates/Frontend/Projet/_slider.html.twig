@@ -1,0 +1,13 @@
+<div class="swiper banner-slider">
+	<div class="swiper-wrapper">
+		{% for image in projet.images %}
+			<div class="swiper-slide">
+				<img src="{{ vich_uploader_asset(image) }}" alt="{{ projet.title }}">
+			</div>
+		{% endfor %}
+	</div>
+	<div class="swiper-pagination"></div>
+	<div class="header">
+		<h1>{{ projet.title|sanitize_html }}</h1>
+	</div>
+</div>

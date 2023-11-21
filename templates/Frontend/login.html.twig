@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}login
+{% endblock %}
+
+{% block body %}
+	<div class='wrap'>
+		<h1>Login</h1>
+		{% if error %}
+			<div class="alert alert-danger" role="alert">
+				{{ error.messageKey|trans(error.messageData, 'security') }}
+			</div>
+		{% endif %}
+		<form action="{{ path('app.login') }}" method="post">
+			<input type="text" id="username" name="_username" placeholder='Username' value="{{ lastUsername }}">
+			<input input type="password" id="password" placeholder='Password' name="_password">
+			<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+			<button class='forgot'>FORGOT PASSWORD ?</button>
+			<button class='login' type="submit">LOG IN</button>
+		</form>
+
+	</div>
+{% endblock %}

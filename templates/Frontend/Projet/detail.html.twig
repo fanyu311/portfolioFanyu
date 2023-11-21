@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Detail de projet
+{% endblock %}
+
+{% block body %}
+	<section>
+		<div>
+			{% for projet in projets %}
+				{% include 'Components/_projetDetail.html.twig' %}
+			{% endfor %}
+		</div>
+	</section>
+{% endblock %}

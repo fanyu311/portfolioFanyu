@@ -1,0 +1,54 @@
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 250px;
+    
+    
+        &-right {
+            gap: 0.8em;
+            display: flex;
+            flex-direction: column;
+            h2{
+                white-space: nowrap;
+            }
+           
+        }
+
+        &-left {
+            line-height: 3em;
+        }
+    
+        .reseaux{
+            display: flex;
+            justify-content: space-around;
+            gap: 1em;
+            margin-left: 1em;
+            font-family: 'ubuntu', sans-serif;
+            a {
+                &:hover{
+                    color: black;
+                    filter: blur(2px);
+                    animation: animates 2.5s linear infinite;
+                  }
+                  @keyframes animates {
+                    0%, 100% {
+                        color: #fff;
+                        filter: blur(2px);
+                        text-shadow: 0 0 10px #c3ff1e
+                    }
+                    5%,95% {
+                        color: #111;
+                        filter: blur(0px);
+                    }
+                  }
+
+            }
+            
+            }
+    }
+
+   .contact-sujet {
+    margin-left: 0.5em;
+   }

@@ -1,0 +1,54 @@
+.content-projet{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    margin-left: -3em;
+    margin-bottom: 3em;
+
+    .zoomphoto {
+        width: 700px;
+        height: 300px;
+    }
+
+    .content-text{
+        width: 50%;
+        ul {
+        list-style: none;
+        margin-bottom: 10px;
+        margin-left: 28em;
+        }
+        em {
+            background-color: $secondary;
+        }
+        a {
+            
+            text-decoration: none;
+
+          
+        }
+        p{
+            font-family: 'ubuntu', sans-serif;
+        }
+
+    }
+
+}
+
+
+    
+    .projet-text {
+        margin-top: 1em;
+        text-align: center;
+        margin-left: -15.5em;
+        color: $secondary;
+    }
+
+    .projet-separator{
+        width: 69%;
+        margin-left: 27em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-style: none;
+        border: 1px solid #8d92a9;
+    }
+

@@ -1,0 +1,46 @@
+.content-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 8em;
+    margin-left: 30em;
+
+    a:hover{
+        color: black;
+        filter: blur(2px);
+        animation: cv 2.5s linear infinite;
+      }
+      @keyframes cv {
+        0%, 100% {
+            color: #fff;
+            filter: blur(2px);
+            text-shadow: 0 0 10px #c3ff1e
+        }
+        5%,95% {
+            color: #111;
+            filter: blur(0px);
+        }
+      }
+    h1{
+        margin-right: 19.2em;
+        color: $secondary;
+    }
+
+    .head-separator{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-style: none;
+        border: 1px solid #8d92a9;
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondary;
+    }
+
+    p {
+        font-family: 'Ubuntu', sans-serif;
+    }
+}

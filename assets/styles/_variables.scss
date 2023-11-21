@@ -1,0 +1,35 @@
+// Définition des variables root
+
+// Color
+$primary: #1b2731;
+$secondary: #f8c557;
+$tertiary: #252c33;
+
+$text-color: #777777;
+$grey: #888;
+$grey-light: #bdbdbd;
+$grey-aside: #ececec;
+$white: #f5f5f5;
+$dark-blue: #0b2864;
+$grey-banner: #fcfcfd;
+$heading: #48455a;
+
+// Colors
+$greenSeaweed: rgba(2, 128, 144, 1);
+$blueQueen: rgba(69, 105, 144, 1);
+$redFire: rgba(244, 91, 105, 1);
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Karla");
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300");
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$font-primary: "Lato", sans-serif;
+
+// Border radius
+$border-radius: 8px;

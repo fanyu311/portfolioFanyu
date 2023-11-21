@@ -1,0 +1,13 @@
+<div>
+	<div>
+		<h2>{{ projet.title|sanitize_html }}</h2>
+		<div>
+			{% for categorie in projet.categories %}
+				#{{ categorie.title }}
+			{% endfor %}
+		</div>
+		<p>{{ projet.content|sanitize_html}}</p>
+	</div>
+	<div>
+		<img src="{{ vich_uploader_asset(projet, 'image')}}" alt="photo" class="zoomphoto"></div>
+</div>

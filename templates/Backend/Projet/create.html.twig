@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Création d'un projet
+	{{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('admin') }}
+{% endblock %}
+
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags('admin') }}
+{% endblock %}
+
+{% block body %}
+	<section class="container-projet">
+		<h1 class="sujet">Création d'un projet</h1>
+		{% include 'Backend/Projet/_form.html.twig' with { buttonLabel: 'Créer' } %}
+	</section>
+{% endblock %}

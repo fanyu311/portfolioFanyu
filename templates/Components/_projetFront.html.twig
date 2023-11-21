@@ -1,0 +1,24 @@
+<div class="content-projet">
+	<div class="content-text" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+		<ul>
+			<li>
+
+				<h2>{{ projet.title|sanitize_html }}</h2>
+
+				<em class="blog-card-content-tags text-muted">
+					{% for categorie in projet.categories %}
+						#{{ categorie.title }}
+					{% endfor %}
+				</em>
+				<p>{{ projet.content|sanitize_html }}</p>
+				{# <p>{{ projet.content|slice(0, 150)|sanitize_html|striptags }}</p> #}
+			</li>
+		</ul>
+
+	</div>
+	<div class="content-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+		<img src="{{ vich_uploader_asset(projet, 'image')}}" alt="photo" class="zoomphoto">
+
+	</div>
+
+</div>
