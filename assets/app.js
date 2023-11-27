@@ -10,9 +10,9 @@ import './bootstrap.js';
 import './styles/app.scss';
 
 // 不能忘记importer图片在这里，不然不能用
-import './images/header-img.png';
+import './images/header-img1.png';
 
-import './images/header-img4.png';
+import './images/header-img7.png';
 
 import './images/body.jpg';
 
