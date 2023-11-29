@@ -52,3 +52,43 @@
         border: 1px solid #8d92a9;
     }
 
+    @media screen and (max-width: 992px){
+       .projet-text {
+        margin: auto;
+       }
+
+       .projet-separator {
+        margin: auto;
+       }
+    .content-projet{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+     
+    
+        .content-text{
+            
+            ul{
+                margin: auto;  
+
+                p{
+                    margin-bottom: 2em;
+                }
+            }
+        }
+        .content-img{
+            width: 100%;
+            margin-top: 2em;
+          
+        }
+        
+    }
+
+    .content {
+            margin-top: 2em;
+    }
+    }
+

@@ -20,6 +20,8 @@ import './images/star.png';
 
 import './images/wechat.png';
 
+import './js/menuBurger.js';
+
 
 
 

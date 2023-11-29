@@ -1,27 +1,28 @@
 <header>
-	<nav class="navbar">
+	<nav class="navbar menu-navbar">
 
 		<a href="{{ path('app.homepage')}}" class="navbar-left">
 			<img class="icon" src="{{asset('build/images/star.png')}}" alt="star" loading:"lazy">
 		</a>
 		<div class="navbar-right">
+			<a class="link-burger">
+				<span class="navbar-burger"></span>
+			</a>
 			<ul>
-
 				<li>
 					<a href="{{path('app.projets.index')}}">
-						<i class="bi bi-file-earmark-medical">Projets</i>
+						<i class="bi bi-file-earmark-medical">PROJETS</i>
 					</a>
 				</li>
-
 				<li>
 					<a href="{{ path('app.about')}}">
-						<i class="bi bi-balloon-heart">About</i>
+						<i class="bi bi-balloon-heart">À PROPOS</i>
 					</a>
 				</li>
 				<li>
 					<a href="{{ path('app.contact')}}">
 						<i class="bi bi-postcard-heart">
-							Contact</i>
+							CONTACT</i>
 					</li>
 				</li>
 			</i>

@@ -44,3 +44,14 @@
         font-family: 'Ubuntu', sans-serif;
     }
 }
+
+@media screen and (max-width: 992px){
+    .content-about{
+        margin: auto;
+        text-align: justify;
+        margin-top: 3em;
+        h1 {
+            margin: auto;
+        }
+    }
+}

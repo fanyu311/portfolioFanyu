@@ -53,13 +53,8 @@
            transform: rotate(8deg);
            padding-left: 6em;
            width: 290px;
-           height: 420px;
-        
-           
+           height: 420px;       
         }
-       
-       
-      
     }
    
 
@@ -76,5 +71,44 @@
       }
   
  
+}
+
+@media screen and (max-width: 992px){
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin: auto;
+   
+
+    .photo{
+      img{
+        margin-top: 1em;
+        width: 220px;
+        height: 320px;
+        // margin-right: 8em;
+        margin-bottom: 2em;
+      }
+    }
+
+    .text{
+    
+      width: 100%;
+      margin: auto;
+
+      h2{
+        text-align: center;
+       
+      }
+      p{
+        margin-top: 2em;
+        width: 100%;
+        margin-bottom: 2em;
+      }
+    }
+   
+  }
+
+  
 }
 
