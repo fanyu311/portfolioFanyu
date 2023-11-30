@@ -8,7 +8,9 @@ html,
 body {
     scroll-behavior: smooth;
 }
-
+html {
+    height: 100%;
+}
 body {
     font-family: $font-primary;
     font-size: 16px;
@@ -16,8 +18,13 @@ body {
     color: $text-color;
     line-height: 28px;
     transition: 0.5s;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
+main {
+    flex: 1;
+}
 h1,
 h2,
 h3,
@@ -104,12 +111,12 @@ body{
     background-image: url('../images/body.jpg');
     background-size: cover; 
     background-position: center center; /* 或者其他位置 */
-    background-repeat: repeat;
+    // background-repeat: repeat;
     position: relative;
-    height: 80vh;
+    // height: 80vh;
 }
-@media screen and (max-width: 992px){
-    body{
-        height: 140vh;
-    }
-}
+// @media screen and (max-width: 992px){
+//     body{
+//         height: 30vh;
+//     }
+// }

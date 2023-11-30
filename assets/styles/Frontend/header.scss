@@ -35,7 +35,7 @@
    }
 
    &-right {
-    margin-top: 2em;
+    margin-top: 5em;
     margin-left: -5em;
     ul {
         display: flex;
@@ -69,8 +69,8 @@
 }
 .navbar-burger {
   display: inline-block;
-  width: 50px;
-  height: 4px;
+  width: 120px;
+  height: 10px;
   background: #ffc048;
   border-radius: 5px;
   position: relative;
@@ -82,8 +82,8 @@
 .navbar-burger::after {
   content: "";
   display: inline-block;
-  width: 50px;
-  height: 4px;
+  width: 120px;
+  height: 10px;
   background: #ffc048;
   border-radius: 5px;
   position: absolute;
@@ -91,11 +91,11 @@
 }
 
 .navbar-burger::before {
-  top: -13px;
+  top: -30px;
 }
 
 .navbar-burger::after {
-  top: 13px;
+  top: 30px;
 }
 
 .link-burger {
@@ -116,6 +116,9 @@
   transform: rotate(-45deg);
 }
 @media screen and (max-width: 992px){
+  .navbar {
+    padding-top: 5em;
+  }
   .menu-navbar{
     margin-left: -1em;
     z-index: 999;
@@ -153,7 +156,13 @@
 
     .navbar-right ul.open {
         transform: scaleY(1);
+        height: 400px;
     }
+    .icon{
+      width: 200px;
+      height: 200px;
+    }
+  
 
 }
 
